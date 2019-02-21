@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/box_48.png</file>
+        <file>icons/box_download_48.png</file>
+        <file>icons/box_upload_48.png</file>
+        <file>icons/database_remove_48.png</file>
+        <file>icons/home_48.png</file>
+        <file>icons/cross_48.png</file>
+        <file>icons/book_48.png</file>
+        <file>icons/search_48.png</file>
+        <file>icons/accepted_48.png</file>
+        <file>icons/add_48.png</file>
+        <file>icons/cancel_48.png</file>
+        <file>icons/spanner_48.png</file>
+        <file>icons/table_48.png</file>
+        <file>icons/table_green_48.png</file>
+    </qresource>
+    <qresource prefix="/sql">
+        <file>almacen.sql</file>
+    </qresource>
+</RCC>

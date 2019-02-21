@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema Contable</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAlmacen"/>
+    <addaction name="actionAlmacenTienda"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuOperaciones">
+    <property name="title">
+     <string>Operaciones</string>
+    </property>
+    <addaction name="actionGestionarProductos"/>
+    <addaction name="actionGestionarTiendas"/>
+    <addaction name="separator"/>
+    <addaction name="actionEntrada"/>
+    <addaction name="actionSalida"/>
+    <addaction name="separator"/>
+    <addaction name="actionCuadreCaja"/>
+   </widget>
+   <widget class="QMenu" name="menuReportes">
+    <property name="title">
+     <string>Reportes</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuOperaciones"/>
+   <addaction name="menuReportes"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAlmacen"/>
+   <addaction name="actionAlmacenTienda"/>
+   <addaction name="separator"/>
+   <addaction name="actionGestionarTiendas"/>
+   <addaction name="actionGestionarProductos"/>
+   <addaction name="separator"/>
+   <addaction name="actionEntrada"/>
+   <addaction name="actionSalida"/>
+   <addaction name="separator"/>
+   <addaction name="actionCuadreCaja"/>
+  </widget>
+  <action name="actionGestionarProductos">
+   <property name="icon">
+    <iconset resource="utils.qrc">
+     <normaloff>:/icons/box_48.png</normaloff>:/icons/box_48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Gestionar productos</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="utils.qrc">
+     <normaloff>:/icons/cross_48.png</normaloff>
+     <normalon>:/icons/icons/cross_48.png</normalon>:/icons/cross_48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionGestionarTiendas">
+   <property name="icon">
+    <iconset resource="utils.qrc">
+     <normaloff>:/icons/home_48.png</normaloff>:/icons/home_48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Gestionar tiendas</string>
+   </property>
+  </action>
+  <action name="actionCuadreCaja">
+   <property name="icon">
+    <iconset resource="utils.qrc">
+     <normaloff>:/icons/book_48.png</normaloff>:/icons/book_48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cuadre de caja</string>
+   </property>
+  </action>
+  <action name="actionAlmacen">
+   <property name="icon">
+    <iconset resource="utils.qrc">
+     <normaloff>:/icons/table_48.png</normaloff>:/icons/table_48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Almacén central</string>
+   </property>
+   <property name="toolTip">
+    <string>Almacén central</string>
+   </property>
+  </action>
+  <action name="actionEntrada">
+   <property name="icon">
+    <iconset resource="utils.qrc">
+     <normaloff>:/icons/box_download_48.png</normaloff>:/icons/box_download_48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Entrada de producto ...</string>
+   </property>
+  </action>
+  <action name="actionSalida">
+   <property name="icon">
+    <iconset resource="utils.qrc">
+     <normaloff>:/icons/box_upload_48.png</normaloff>:/icons/box_upload_48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salida de producto ...</string>
+   </property>
+  </action>
+  <action name="actionAlmacenTienda">
+   <property name="icon">
+    <iconset resource="utils.qrc">
+     <normaloff>:/icons/table_green_48.png</normaloff>:/icons/table_green_48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Almacén de tienda</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="utils.qrc"/>
+ </resources>
+ <connections/>
+</ui>
